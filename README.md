@@ -1,4 +1,4 @@
 gspeech
 =======
 
-Speech using google api.
+Speech using Google API.
