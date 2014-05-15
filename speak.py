@@ -4,7 +4,7 @@ import urllib2 # urllib2.Request urllib2.urlopen
 import urllib # urllib.urlencode
 import sys
 from optparse import OptionParser
-#import pygame
+import pygame
 
 service = 'http://translate.google.com/translate_tts?'
 
@@ -21,9 +21,9 @@ def speak(text, language):
     f = open('.tmp.mp3', 'w')
     f.write(google_speech)
     f.close()
-    #pygame.init()
-    #pygame.mixer.music.load(".tmp.mp3")
-    #pygame.mixer.music.play()
+    pygame.init()
+    pygame.mixer.music.load(".tmp.mp3")
+    pygame.mixer.music.play()
 
 
 def main():
